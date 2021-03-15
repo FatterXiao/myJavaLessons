@@ -16,7 +16,7 @@ public class Lottery {
      * 创建大乐透中奖号码
      * @return
      */
-    public int[] createLotteryNumbers(){
+    public int[] initailizeLotteryNumbers(){
         numbers = new int[10];
         Random random = new Random();
         int length = numbers.length;

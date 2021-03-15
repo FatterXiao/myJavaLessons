@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eab9cd85-cb04-43cc-a65d-29b8038e4024" name="Default Changelist" comment="" />
+    <list default="true" id="eab9cd85-cb04-43cc-a65d-29b8038e4024" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer03/Card.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer03/CardTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer04/CharacterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer04/CharacterUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer05/Statistics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer05/StatisticsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer08/Grades.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer08/GradesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer12/ExistLetter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer12/ExistLetterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methoddefination/exer02/Triangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer01/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer01/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer01/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer02/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer02/Bank.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer02/BankTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer02/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer01/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer01/Lottery.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer01/LotteryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer01/LotteryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer02/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer02/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer02/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer02/CardTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/homework/com/atguigu/part5/exer/Lottery.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/homework/com/atguigu/part5/exer/LotteryTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myexer/com/atguigu/day09/exer_ppt/exer01/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myexer/com/atguigu/day09/exer_ppt/exer01/CircleTest.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,17 +44,27 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1pV34tSfj3pmBysO6kJMRFWeFg9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/myexer/src/com/atguigu/day07/homework" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.atguigu.part5.exer03" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Idea_2019_2_2Workspace\JavaDemo210301\myexer\src\com\atguigu\day07\homework" />
       <recent name="D:\Idea_2019_2_2Workspace\JavaDemo210301\day07\src\com\atguigu\java" />
@@ -45,13 +84,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LotteryTest">
-    <configuration name="CircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.day09.exer_ppt.exer01.CircleTest" />
+  <component name="RunManager" selected="Application.BankTest">
+    <configuration name="BankTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.day10.exer_doc.exer02.BankTest" />
       <module name="myexer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.day09.exer_ppt.exer01.*" />
+          <option name="PATTERN" value="com.atguigu.day10.exer_doc.exer02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -59,12 +98,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CitizenTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.part6.attribution.exer02.CitizenTest" />
+    <configuration name="CylinderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.exer_ppt.exer02.CylinderTest" />
+      <module name="day10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.exer_ppt.exer02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KidsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.exer_ppt.exer01.KidsTest" />
+      <module name="day10" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.exer_ppt.exer01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StatisticsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.part5.exer05.StatisticsTest" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.part6.attribution.exer02.*" />
+          <option name="PATTERN" value="com.atguigu.part5.exer05.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -72,38 +137,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LotteryTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.part5.exer01.LotteryTest" />
-      <module name="homework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.part5.exer01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyDateTest (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.part6.methoddefination.exer01.MyDateTest" />
-      <module name="homework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.part6.methoddefination.exer01.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyDateTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.day08.exer_ppt.exer03.MyDateTest" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.day10.exer_doc.exer01.Test" />
       <module name="myexer" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.day08.exer_ppt.exer03.*" />
+          <option name="PATTERN" value="com.atguigu.day10.exer_doc.exer01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LotteryTest" />
-        <item itemvalue="Application.CircleTest" />
-        <item itemvalue="Application.MyDateTest (1)" />
-        <item itemvalue="Application.CitizenTest" />
-        <item itemvalue="Application.MyDateTest" />
+        <item itemvalue="Application.BankTest" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.CylinderTest" />
+        <item itemvalue="Application.KidsTest" />
+        <item itemvalue="Application.StatisticsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -146,11 +185,26 @@
       <workItem from="1615599510918" duration="6575000" />
       <workItem from="1615643550778" duration="1256000" />
       <workItem from="1615693268245" duration="4047000" />
+      <workItem from="1615703601655" duration="13904000" />
+      <workItem from="1615768062087" duration="18445000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -159,6 +213,11 @@
           <url>file://$PROJECT_DIR$/day07/src/com/atguigu/java/QuickSort.java</url>
           <line>23</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer01/Account.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -1,6 +1,4 @@
-package com.atguigu.part5.exer02;
-
-import java.util.concurrent.locks.ReentrantReadWriteLock;
+package com.atguigu.part5.exer03;
 
 /**
  * - 打印扑克牌
@@ -43,8 +41,7 @@ public class Card {
      */
     public void printCards(){
         if(cards == null){
-            System.out.println("打印错误。请先初始化扑克牌。");
-            return;
+            this.initailizeCards();
         }
 
         int length = cards.length;
@@ -57,6 +54,23 @@ public class Card {
         }
     }
 
+    /**
+     * 打印指定的扑克牌
+     * @param number
+     */
+    public void printSpecialCard(int number){
+        if(cards == null){
+            this.initailizeCards();
+            //return;
+        }
+        if(number < 1 || number > 52){
+            System.out.println("输入错误。\n请输入1-52之间的数字。");
+            return;
+        }
 
+        System.out.println(cards[number/13][number%13]);
+
+    }
+   
 
 }

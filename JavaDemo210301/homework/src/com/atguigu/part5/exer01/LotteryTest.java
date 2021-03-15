@@ -9,7 +9,7 @@ public class LotteryTest {
     public static void main(String[] args) {
         Lottery lottery = new Lottery();
         // 1. 创建一组大乐透号码
-        lottery.createLotteryNumbers();
+        lottery.initailizeLotteryNumbers();
         // 2. 打印大乐透号码信息
         lottery.printNumbers();
     }
