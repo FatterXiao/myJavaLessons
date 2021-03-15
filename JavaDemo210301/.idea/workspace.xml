@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eab9cd85-cb04-43cc-a65d-29b8038e4024" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer03/Card.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer03/CardTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer04/CharacterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer04/CharacterUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer05/Statistics.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer05/StatisticsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer08/Grades.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer08/GradesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer12/ExistLetter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer12/ExistLetterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methoddefination/exer02/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer01/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer01/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer01/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer02/Account.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer02/Bank.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer02/BankTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day10/exer_doc/exer02/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer01/Lottery.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer01/Lottery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer01/LotteryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer01/LotteryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer02/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer02/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer02/CardTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part5/exer02/CardTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/homework/com/atguigu/part5/exer/Lottery.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/homework/com/atguigu/part5/exer/LotteryTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/myexer/com/atguigu/day09/exer_ppt/exer01/CircleTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myexer/com/atguigu/day09/exer_ppt/exer01/CircleTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="eab9cd85-cb04-43cc-a65d-29b8038e4024" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,7 +157,7 @@
       <workItem from="1615643550778" duration="1256000" />
       <workItem from="1615693268245" duration="4047000" />
       <workItem from="1615703601655" duration="13904000" />
-      <workItem from="1615768062087" duration="18445000" />
+      <workItem from="1615768062087" duration="18547000" />
     </task>
     <servers />
   </component>
