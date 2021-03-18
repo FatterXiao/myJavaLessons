@@ -14,6 +14,14 @@ public class Customer {
     public Customer() {
     }
 
+    /**
+     *
+     * @param name 姓名
+     * @param gender 性别（男/女）
+     * @param age 年龄
+     * @param phone 电话
+     * @param email 邮箱
+     */
     public Customer(String name, char gender, int age, String phone, String email) {
         this.name = name;
         this.gender = gender;
@@ -60,5 +68,13 @@ public class Customer {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    /**
+     * 返回消费者的详细信息
+     * @return
+     */
+    public String getDetial(){
+        return name + "\t" + gender + "\t\t" + age + "\t\t\t" + phone + "\t\t" + email;
     }
 }

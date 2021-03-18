@@ -27,6 +27,7 @@ class CheckingAccount extends Account {//信用卡账户
             System.out.println("成功取出：" + amt);
         }else if(amt <= getBalance() + protectedInit){
             protectedInit -= (amt - getBalance());
+            //**********
             super.withdraw(getBalance());
             System.out.println("使用了信用资金。成功取出：" + amt);
         }else{

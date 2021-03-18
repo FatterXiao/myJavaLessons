@@ -2,22 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eab9cd85-cb04-43cc-a65d-29b8038e4024" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Project02/Project02.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day11/day11.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/day12/day12.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/base64/Base64Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer01/Child.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer01/People.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/project02/CMUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/project02/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/project02/CustomerList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/project02/CustomerView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/myproject02/CMUtility.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/myproject02/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/myproject02/CustomerList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3__2_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_3__3_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day12/libs/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day12/libs/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/examPool/examPool.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/libs/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/libs/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/classAndObject/exer01/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/classAndObject/exer01/EmployeeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methoddefination/exer03/MathTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methoddefination/exer03/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methoddefination/exer04/MyArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methoddefination/exer05/CommonsTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methodexpands/exer01/Count.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methodexpands/exer02/GraphicTools.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methodexpands/exer03/MyArrays.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methodexpands/exer04/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methodexpands/exer04/PassParamDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer01/Test01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer02/test02.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer03/Test03.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer04/Test04.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer05/T.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/libs/hamcrest-core-1.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/libs/junit-4.12.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07doc/doc01/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07doc/doc01/CheckAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07doc/doc01/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07ppt/exer01/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07ppt/exer01/GeometricObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07ppt/exer01/GeometricTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07ppt/exer01/MyRectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07ppt/exer02/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07ppt/exer02/OrderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07ppt/exer03/MyDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07ppt/exer03/MyDateTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07tests/CloneTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/myproject02/CustomerView.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methoddefination/exer01/MyDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/homework/src/com/atguigu/part6/methoddefination/exer01/MyDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11/src/com/atguigu/exer1/Bank.java" beforeDir="false" afterPath="$PROJECT_DIR$/day11/src/com/atguigu/exer1/Bank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day11/src/com/atguigu/exer3/SuperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/day11/src/com/atguigu/exer3/SuperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day12/day12.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day12/day12.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/homework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/homework/homework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer01/Child.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer01/People.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/myexer/myexer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myexer/myexer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myexer/src/com/atguigu/myproject02/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/myexer/src/com/atguigu/myproject02/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/homework/com/atguigu/part7/inherit/exer01/Child.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/com/atguigu/part7/inherit/exer01/Child.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/homework/com/atguigu/part7/inherit/exer01/People.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/homework/com/atguigu/part7/inherit/exer01/People.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/myexer/com/atguigu/day10/exer_doc/exer02/BankTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/myexer/com/atguigu/day10/exer_doc/exer02/BankTest.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,22 +79,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/myexer/src/com/atguigu/myproject02" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/myexer/src/com/atguigu/day12/part07tests" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.atguigu.part5.exer03" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\GitHub\myJavaLessons\JavaDemo210301\myexer\src\com\atguigu\day12\part07tests" />
+      <recent name="E:\GitHub\myJavaLessons\JavaDemo210301\myexer\libs" />
+      <recent name="E:\GitHub\myJavaLessons\JavaDemo210301\homework\libs" />
+      <recent name="E:\GitHub\myJavaLessons\JavaDemo210301\day12\libs" />
       <recent name="E:\GitHub\myJavaLessons\JavaDemo210301\myexer\src\com\atguigu\myproject02" />
-      <recent name="E:\GitHub\myJavaLessons\JavaDemo210301\homework\src\com\atguigu\project02" />
-      <recent name="D:\Idea_2019_2_2Workspace\JavaDemo210301\myexer\src\com\atguigu\day07\homework" />
-      <recent name="D:\Idea_2019_2_2Workspace\JavaDemo210301\day07\src\com\atguigu\java" />
-      <recent name="D:\Idea_2019_2_2Workspace\JavaDemo210301\day06\src\com\atguigu\exam" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -73,26 +109,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Base64Test">
-    <configuration name="BankTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.day10.exer_doc.exer02.BankTest" />
-      <module name="myexer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.atguigu.day10.exer_doc.exer02.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Base64Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.base64.Base64Test" />
+  <component name="RunManager" selected="Application.Test04">
+    <configuration name="Test01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.part7.inherit.exer01.Test01" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.base64.*" />
+          <option name="PATTERN" value="com.atguigu.part7.inherit.exer01.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +123,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.project02.CustomerView" />
+    <configuration name="Test03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.part7.inherit.exer03.Test03" />
       <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.project02.*" />
+          <option name="PATTERN" value="com.atguigu.part7.inherit.exer03.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +136,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CylinderTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.exer_ppt.exer02.CylinderTest" />
-      <module name="day10" />
+    <configuration name="Test04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.part7.inherit.exer04.Test04" />
+      <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.exer_ppt.exer02.*" />
+          <option name="PATTERN" value="com.atguigu.part7.inherit.exer04.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,26 +149,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.atguigu.day10.exer_doc.exer01.Test" />
-      <module name="myexer" />
+    <configuration name="test02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.part7.inherit.exer02.test02" />
+      <module name="homework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.atguigu.day10.exer_doc.exer01.*" />
+          <option name="PATTERN" value="com.atguigu.part7.inherit.exer02.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmployeeManager.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="homework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.atguigu.part6.classAndObject.exer01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.atguigu.part6.classAndObject.exer01" />
+      <option name="MAIN_CLASS_NAME" value="com.atguigu.part6.classAndObject.exer01.EmployeeManager" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Base64Test" />
-        <item itemvalue="Application.CustomerView" />
-        <item itemvalue="Application.BankTest" />
-        <item itemvalue="Application.Test" />
-        <item itemvalue="Application.CylinderTest" />
+        <item itemvalue="Application.Test04" />
+        <item itemvalue="Application.Test03" />
+        <item itemvalue="Application.test02" />
+        <item itemvalue="Application.Test01" />
+        <item itemvalue="JUnit.EmployeeManager.test" />
       </list>
     </recent_temporary>
   </component>
@@ -177,7 +216,14 @@
       <workItem from="1615703601655" duration="13904000" />
       <workItem from="1615768062087" duration="21261000" />
       <workItem from="1615817707582" duration="3681000" />
-      <workItem from="1615853698304" duration="8947000" />
+      <workItem from="1615853698304" duration="21275000" />
+      <workItem from="1615904942886" duration="2744000" />
+      <workItem from="1615940281914" duration="2819000" />
+      <workItem from="1615961201983" duration="13110000" />
+      <workItem from="1615987690570" duration="118000" />
+      <workItem from="1615990120380" duration="3220000" />
+      <workItem from="1616030316875" duration="18256000" />
+      <workItem from="1616068836524" duration="1210000" />
     </task>
     <servers />
   </component>
@@ -204,6 +250,11 @@
           <url>file://$PROJECT_DIR$/day07/src/com/atguigu/java/QuickSort.java</url>
           <line>23</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/homework/src/com/atguigu/part7/inherit/exer01/Test01.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
