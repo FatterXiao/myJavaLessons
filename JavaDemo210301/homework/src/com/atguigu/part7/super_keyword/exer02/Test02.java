@@ -6,14 +6,14 @@ public class Test02 {
     public static void main(String[] args) {
         Father f = new Father();
         Son s = new Son();
-        System.out.println(f.getInfo());
-        System.out.println(s.getInfo());
-        s.test();
+        System.out.println(f.getInfo()); // atguigu
+        System.out.println(s.getInfo()); // 尚硅谷
+        s.test(); // 尚硅谷 atguigu
         System.out.println("-----------------");
         s.setInfo("大硅谷");
-        System.out.println(f.getInfo());
-        System.out.println(s.getInfo());
-        s.test();
+        System.out.println(f.getInfo());// atguigu
+        System.out.println(s.getInfo());// 大硅谷
+        s.test();// 大硅谷 atguigu
     }
 }
 
