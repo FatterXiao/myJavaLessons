@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单对象属性过滤选择器</title>
+		<script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				//1.对表单内 可用input 赋值操作
+				/*
+					val()：用来获取或设置表单项的value属性值
+						jQuery对象.val()：获取value属性值
+						jQuery对象.val("new value")：设置value属性值
+				 */
+				$("#btn1").click(function(){
+					$("input:enabled").val("New Value");
+				});
+				//2.对表单内 不可用input 赋值操作
+				$("#btn2").click(function(){
+					$("input:disabled").val("New Value Too");
+				});
+				//3.获取多选框选中的个数
+				$("#btn3").click(function(){
+					alert($(":checkbox:checked").length);
+				});
+				//4.获取多选框选中的内容
+				$("#btn4").click(function(){
+					/*
+						如果被选中的复选框有多个，直接调用val()只能得到第一个value值，
+						此时需要遍历得到每一个被选中的复选框，然后再获取value值
+					 */
+					$(":checkbox:checked").each(function () {
+						//通过each方法遍历之后得到的是DOM对象，如果需要调用jQuery的方法需要将DOM对象转换为jQuery对象
+						//通过DOM对象的方式获取value属性值
+						// alert(this.value);
+						//通过jQuery对象获取value属性值
+						alert($(this).val());
+					});
+				});
+				//5.获取下拉框选中的内容
+				$("#btn5").click(function(){
+					$(":selected").each(function () {
+						//通过DOM对象获取value值
+						// alert(this.value);
+						//通过jQuery对象获取value值
+						alert($(this).val());
+					});
+				});
+			})	
+		</script>
+	</head>
+	<body>
+		<h3>表单对象属性过滤选择器</h3>
+		 <button id="btn1">对表单内 可用input 赋值操作.</button>
+  		 <button id="btn2">对表单内 不可用input 赋值操作.</button><br /><br />
+		 <button id="btn3">获取多选框选中的个数.</button>
+		 <button id="btn4">获取多选框选中的内容.</button><br /><br />
+         <button id="btn5">获取下拉框选中的内容.</button><br /><br />
+		 
+		<form id="form1" action="#">			
+			可用元素: <input name="add" value="可用文本框1"/><br>
+			不可用元素: <input name="email" disabled="disabled" value="不可用文本框"/><br>
+			可用元素: <input name="che" value="可用文本框2"/><br>
+			不可用元素: <input name="name" disabled="disabled" value="不可用文本框"/><br>
+			<br>
+			
+			多选框: <br>
+			<input type="checkbox" name="newsletter" checked="checked" value="test1" />test1
+			<input type="checkbox" name="newsletter" value="test2" />test2
+			<input type="checkbox" name="newsletter" value="test3" />test3
+			<input type="checkbox" name="newsletter" checked="checked" value="test4" />test4
+			<input type="checkbox" name="newsletter" value="test5" />test5
+			
+			<br><br>
+			下拉列表1: <br>
+			<select name="test" multiple="multiple" style="height: 100px">
+				<option>浙江</option>
+				<option selected="selected" value="ln">辽宁</option>
+				<option>北京</option>
+				<option selected="selected">天津</option>
+				<option>广州</option>
+				<option>湖北</option>
+			</select>
+			
+			<br><br>
+			下拉列表2: <br>
+			<select name="test2">
+				<option>浙江</option>
+				<option>辽宁</option>
+				<option selected="selected">北京</option>
+				<option>天津</option>
+				<option>广州</option>
+				<option>湖北</option>
+			</select>
+		</form>		
+	</body>
+</html>
+

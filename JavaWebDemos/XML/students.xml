@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<students>
+    <student id="1">
+        <name>孙悟空</name>
+        <gender>公猴</gender>
+        <age>520</age>
+        <address>花果山</address>
+    </student>
+    <student id="2">
+        <name>猪八戒</name>
+        <gender>公猪</gender>
+        <age>1500</age>
+        <address>高老庄</address>
+    </student>
+    <student id="3">
+        <name>沙和尚</name>
+        <gender>人妖</gender>
+        <age>1800</age>
+        <address>流沙河</address>
+    </student>
+    <student id="4">
+        <name>小白龙</name>
+        <gender>公龙</gender>
+        <age>10000</age>
+        <address>鹰愁涧</address>
+    </student>
+</students>

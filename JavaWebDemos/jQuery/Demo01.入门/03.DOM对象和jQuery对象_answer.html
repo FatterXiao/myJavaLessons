@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>DOM对象和jQuery对象</title>
+<script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#testBtn").click(function () {
+
+			 console.log($("#testDiv").text());
+
+		});
+
+		//分别使用DOM对象和jQuery对象获取div中的文本
+		//给第一个按钮绑定单击事件
+		$("#dom2dom").click(function () {
+			//使用DOM对象调用DOM方法
+			//获取div元素对象
+			var divEle = document.getElementById("testDiv");
+			//获取div中的文本值
+			alert(divEle.innerText);
+		});
+		//给第二个按钮绑定单击事件
+		$("#dom2jQuery").click(function () {
+			//使用DOM对象调用jQuery方法
+			//获取div元素对象
+			var divEle = document.getElementById("testDiv");
+			//通过调用jQuery的方法获取div中的文本值
+			/*
+				text()：获取或设置成对出现的标签中的文本值
+					jQuery对象.text()：获取文本值
+					jQuery对象.text("new value")：设置文本值
+				html()方法与text()的区别是html()方法可以解析HTML标签
+			 */
+			// alert(divEle.text());
+			//注意：通过DOM对象不能调用jQuery的方法，如果需要调用jQuery的方法需要将DOM对象转换为jQuery对象
+			var $divEle = $(divEle);
+			alert($divEle.html());
+		});
+		//给第三个按钮绑定单击事件
+		$("#jQuery2jQuery").click(function () {
+			//使用jQuery对象调用jQuery方法
+			//获取div元素对象
+			var $divEle = $("#testDiv");
+			//获取div中的文本值
+			alert($divEle.text());
+		});
+		//给第四个按钮绑定单击事件
+		$("#jQuery2dom").click(function () {
+			//使用jQuery对象调用DOM的方法
+			//获取div元素对象
+			var $divEle = $("#testDiv");
+			//获取div中的文本值
+			// alert($divEle.innerText);
+			//注意：通过jQuery对象不能调用DOM的方法，如果需要调用DOM的方法需要将jQuery对象转换为DOM对象
+			//将jQury对象转换为DOM对象：使用数组下标
+			var jQueryToDOM = $divEle[0];
+			alert(jQueryToDOM.innerText);
+			/*
+				结论：DOM对象只能调用DOM的方法或属性；jQuery对象只能调用jQuery的方法或属性，两者之间
+				不能互相调用。如果需要调用对方的方法或属性需要进行转换。
+			 */
+		});
+	});
+</script>
+</head>
+<body>
+	<div id="testDiv">挤进尚硅谷，注定你优秀！</div>
+	<br/>
+	<button id="dom2dom">使用DOM对象调用DOM方法</button>
+	<button id="dom2jQuery">使用DOM对象调用jQuery方法</button>
+	<button id="jQuery2jQuery">使用jQuery对象调用jQuery方法</button>
+	<button id="jQuery2dom">使用jQuery对象调用DOM方法</button>
+	<button id="testBtn">test</button>
+</body>
+</html>

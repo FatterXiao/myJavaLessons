@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HelloWorld空白</title>
+<!--JavaScript代码需要写在script标签中-->
+	<script>
+		//当文档加载完成之后再执行函数中的内容
+		window.onload = function () {
+			//获取按钮对象
+			var btnEle = document.getElementById("btnId");
+			// alert(btnEle);
+			//给按钮绑定单击事件
+			btnEle.onclick = function(){
+				//弹出提示框
+				alert("Hello JavaScript!");
+			};
+		};
+
+	</script>
+</head>
+<body>
+	<button id="btnId">SayHello</button><br>
+	<button id="btnId2" onclick="alert('Hello JS')">SayHello</button><br>
+</body>
+</html>

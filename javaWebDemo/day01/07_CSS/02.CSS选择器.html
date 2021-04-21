@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS选择器</title>
+	<style>
+		/*
+			标签选择器
+		*/
+		h2{
+			color: red;
+		}
+		/*
+			ID选择器
+			格式：#id属性值
+		*/
+		#p1{
+			color: green;
+		}
+
+		/*
+			类选择器
+			格式：.class属性值
+		*/
+		.p2{
+			color: blue;
+		}
+		/*
+			选择器分组
+				将各个选择器通过逗号分隔将它们设置为一组，统一设置样式
+		*/
+		#p1,.p2{
+			font-size: 20px;
+		}
+		/*去掉超链接下面的横线*/
+		a{
+			text-decoration: none;
+		}
+		/*
+			派生选择器
+		*/
+		ul li{
+			list-style: none;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<h2>冬夜读书示子聿</h2>
+	<!--id属性：指定一个唯一的标识，在一个HTML页面中，id属性值不能重复-->
+	<p id="p1">宋代•陆游</p>
+	<p class="p2">古人学问无遗力</p>
+	<p class="p2">少壮工夫老始成</p>
+	<p class="p2">纸上得来终觉浅</p>
+	<p class="p2">绝知此事要躬行</p>
+	<div class="p2">我也要变蓝</div>
+	<br>
+	<a href="#">点我有惊喜</a>
+	<ul>
+		<li>网页</li>
+		<li>|</li>
+		<li>贴吧</li>
+		<li>|</li>
+		<li>音乐</li>
+		<li>|</li>
+		<li>视频</li>
+	</ul>
+</body>
+</html>

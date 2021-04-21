@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HellojQuery</title>
+<!--使用jQuery需要引入js库，通过script标签来引入，注意：引入jQuery的js库的script标签的标签体中不能再写Js代码-->
+	<script src="../script/jquery-1.7.2.js"></script>
+	<script>
+		//相当于window.onload = function(){};
+		//当文档加载完成之后再执行函数中的内容
+		$(function () {
+			//获取按钮对象
+			$("#btnId").click(function () {
+				//弹出提示框
+				alert("Hello jQuery!");
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="btnId">SayHello</button>
+</body>
+</html>

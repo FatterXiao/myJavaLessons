@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>全选全不选2(空白)</title>
+	<script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+		/* 
+		功能需求：
+			①全选框：点击后让所有爱好的选中状态和自己一致
+			②爱好框：点满后将全选框选中，否则取消选中
+		*/
+		$(function(){
+			//给全选/全不选复选框绑定单击事件
+			$("#checkedAllBox").click(function () {
+				//①全选框：点击后让所有爱好的选中状态和自己一致
+				//获取四个爱好的复选框，让它们的状态与当前点击的复选框的状态一致
+				// $("[name='items']").attr("checked",this.checked);
+				$(":checkbox:not(:first)").attr("checked",this.checked);
+			});
+			//给四个爱好的复选框绑定单击事件
+			$("[name='items']").click(function () {
+				//②爱好框：点满后将全选框选中，否则取消选中
+				//获取所有的爱好框的个数
+				// var totalCount = $("[name='items']").length;
+				//获取被选中的爱好框的个数
+				// var checkedCount = $("[name='items']:checked").length;
+				//判断两者是否相等
+				// var flag = (totalCount==checkedCount);
+				//设置全选/全不选复选框的状态
+				// $("#checkedAllBox").attr("checked",flag);
+				//一步到位
+				$("#checkedAllBox").attr("checked",$("[name='items']").length==$("[name='items']:checked").length);
+			});
+		});
+		
+	</script>
+	</head>
+	<body>
+	
+		<form method="post" action="">
+		
+			你爱好的运动是：<input type="checkbox" id="checkedAllBox" />全选/全不选 
+			<br />
+			<input type="checkbox" name="items" value="足球" />足球
+			<input type="checkbox" name="items" value="篮球" />篮球
+			<input type="checkbox" name="items" value="羽毛球" />羽毛球
+			<input type="checkbox" name="items" value="乒乓球" />乒乓球
+		</form>
+	
+	</body>
+</html>

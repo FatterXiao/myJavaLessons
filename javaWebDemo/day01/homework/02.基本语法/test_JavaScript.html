@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var mesaage = document.write("<h1>h1 Tiltle</h1>");
+        window.onload = function () {
+            var h1 = document.getElementById("hi");
+            var btn = document.getElementById("btn");
+            btn.onclick = function () {
+                h1.innerHTML = " modify the h1 message.";
+            }
+        };
+    </script>
+</head>
+<body>
+
+    <h1 id="h1">h1 body Title</h1>
+    <button type="button" value="Click" id="btn">Click Me</button>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>Untitled Document</title>
+	<link rel="stylesheet" type="text/css" href="styleB/css.css" />
+	<script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//创建一个删除tr的函数
+			function deleteTr() {
+				//获取tr标签
+				var $trEle = $(this).parent().parent();
+				//获取要删除的员工的姓名
+				// var lastName = $trEle.children().first().text();
+				var lastName = $trEle.children(":first").text();
+				//弹出确认或取消的提示框
+				var flag = confirm("确定要删除"+lastName+"这名员工吗？");
+				//当点击确定时才删除tr标签
+				if(flag){
+					//删除tr标签
+					$trEle.remove();
+				}
+				//取消默认行为
+				return false;
+			}
+
+			//删除操作（必须掌握）
+			// $("a").click(deleteTr);
+			//使用live()函数，即使是后来添加的元素也会自动添加对应的事件
+			$("a").live("click",deleteTr);
+			//添加操作
+			//给添加的按钮绑定单击事件
+			$("#addEmpButton").click(function () {
+				//获取用户输入的用户名、邮箱、工资
+				var username = $("#empName").val();
+				var email = $("#email").val();
+				var salary = $("#salary").val();
+				//创建包含删除的超链接的td元素对象
+				var $delTd = $("<td><a href='#'>Delete</a></td>");
+				//创建tr元素对象，并向其内部添加td标签
+				$("<tr></tr>").append("<td>"+username+"</td>")
+						      .append("<td>"+email+"</td>")
+						      .append("<td>"+salary+"</td>")
+				              .append($delTd)
+				//将拼好的tr添加到id为employeeTable的table中
+				              .appendTo($("#employeeTable"));
+				//给新添加的超链接绑定单击事件
+				// $delTd.children().click(deleteTr);
+			});
+		});
+		
+	</script>
+	</head>
+	<body>
+	
+		<table id="employeeTable">
+			<tr>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Salary</th>
+				<th>&nbsp;</th>
+			</tr>
+			<tr>
+				<td>Tom</td>
+				<td>tom@tom.com</td>
+				<td>5000</td>
+				<td><a href="deleteEmp?id=001">Delete</a></td>
+			</tr>
+			<tr>
+				<td>Jerry</td>
+				<td>jerry@sohu.com</td>
+				<td>8000</td>
+				<td><a href="deleteEmp?id=002">Delete</a></td>
+			</tr>
+			<tr>
+				<td>Bob</td>
+				<td>bob@tom.com</td>
+				<td>10000</td>
+				<td><a href="deleteEmp?id=003">Delete</a></td>
+			</tr>
+		</table>
+	
+		<div id="formDiv">
+		
+			<h4>添加新员工</h4>
+	
+			<table>
+				<tr>
+					<td class="word">name: </td>
+					<td class="inp">
+						<input type="text" name="empName" id="empName" />
+					</td>
+				</tr>
+				<tr>
+					<td class="word">email: </td>
+					<td class="inp">
+						<input type="text" name="email" id="email" />
+					</td>
+				</tr>
+				<tr>
+					<td class="word">salary: </td>
+					<td class="inp">
+						<input type="text" name="salary" id="salary" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<button id="addEmpButton" value="abc">
+							Submit
+						</button>
+					</td>
+				</tr>
+			</table>
+	
+		</div>
+	
+	</body>
+</html>

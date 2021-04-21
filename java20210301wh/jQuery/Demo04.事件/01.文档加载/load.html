@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
+<script type="text/javascript">
+	//window.onload=function(){}与$(function(){})的区别：
+		//1.函数的执行时机不同
+		//window.onload：当这个页面中的内容（包括外部引入的，如图片）全部加载完成之后才执行函数中的内容
+		//$()：当整个HTML文档都加载完成就执行函数中的内容
+		window.onload = function () {
+			alert("window.onload执行……");
+		};
+
+		$(function(){
+			alert("$()执行……");
+		});
+		//2.书写的个数不一样
+		//window.onload只能写一个
+		//$()只能写多个
+		window.onload = function () {
+			alert("window.onload2执行……");
+		};
+
+		$(function(){
+			alert("$()2执行……");
+		});
+
+		//3.表示方式
+		//window.onload只有一种表示方式
+		//$()还可以使用jQuery()或$(document).ready()表示
+		jQuery(function () {
+			alert("jQuery()执行……");
+		});
+
+		$(document).ready(function () {
+			alert("$(document).ready()执行……");
+		});
+</script>
+</head>
+<body>
+
+	<img src="img/boss.jpg" />
+
+</body>
+</html>

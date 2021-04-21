@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form空白</title>
+</head>
+<body>
+    <!--通过form标签创建一个表单
+        action属性：用来设置服务器的地址
+        method属性：用来设置请求方式，get或post
+            get：默认值，将发送一个GET请求，表单中的数据会通过浏览器的地址栏进行传输
+            post：将发送一个POST请求，表单中的数据会通过请求体进行传输，一般我们提交表单都发送POST请求
+    -->
+    <form action="success.html" method="get">
+        <!--1.表单中的表单项通过input标签创建，表单项的类型通过input的type属性来指定，默认type的值是text-->
+        <!--2.表单项必须设置name属性值，提交表单时通过name属性值进行携带，并以键值对的形式发送到
+            服务器，多个键值对之间通过 & 符号分隔，例如：username=admin&password=123456
+        -->
+        用户名：<input type="text" name="username"><br>
+        密码：<input type="password" name="password"><br>
+        <!--
+            对于单选按钮
+            1.要保证单选按钮单选，必须将它们分成一组，即它们的name属性值设置为同一个
+            2.单选按钮提交的是value属性值，所以必须指定value属性值
+            3.通过设置checked="checked"使单选框默认被选中
+        -->
+        性别：<input type="radio" name="gender" value="1" checked="checked">男
+              <input type="radio" name="gender" value="0">女
+        <br>
+        <!--
+           对于多选框/复选框
+           1.必须将它们分成一组，即它们的name属性值设置为同一个
+           2.提交的也是value属性值，所以必须指定value属性值
+           3.通过设置checked="checked"使复选框默认被选中
+       -->
+        您的爱好：
+             <input type="checkbox" name="hobby" value="basketball" checked="checked">篮球
+             <input type="checkbox" name="hobby" value="football">足球
+             <input type="checkbox" name="hobby" value="taiqiu">台球
+        <br>
+        您喜欢的女明星：
+            <select name="star">
+                <option>张弛</option>
+                <!--如果没有指定value属性，提交的是option标签中的文本值；如果设置了value属性，提交的是value属性值-->
+                <option value="cls">苍老师</option>
+                <option value="bd">波多野结衣</option>
+                <option>泷泽</option>
+                <!--通过设置selected="selected"使option默认被选中-->
+                <option selected="selected">小泽玛利亚</option>
+            </select>
+        <br>
+        <!--重置按钮-->
+        <input type="reset">
+        <!--可以通过value属性来指定按钮上显示的文字-->
+        <input type="submit" value="登录">
+    </form>
+</body>
+</html>

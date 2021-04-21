@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="hamcrest-core-1.3 (11)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/jdbc210301/lib/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jdbc210301/lib/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/jdbc210301/lib/mysql-connector-java-5.1.7-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://E:/S_SiliconValley_Tutorial/03_尚硅谷_宋红康_210301_JDBC/3-资料/2-驱动/01-MySQL驱动/mysql-connector-java-5.1.7/src" />
+    </SOURCES>
+  </library>
+</component>

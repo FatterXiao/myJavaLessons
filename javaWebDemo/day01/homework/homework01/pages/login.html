@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <script>
+        window.onload = function () {
+            var btn = document.getElementById("login");
+            btn.onclick = function () {
+                var username = document.getElementById("username");
+                var password = document.getElementById("password");
+                if(username.value == "" || password.value == ""){
+                    alert("用户名或密码不能为空。");
+                    return false;
+                }
+            };
+
+        };
+    </script>
+</head>
+<body>
+<h2>登录页面</h2>
+<div>
+    <img src="../img/logo.gif">
+</div>
+<div>
+    <form action="login_success.html">
+        <table border="1">
+            <tr>
+                <td>用户名</td>
+                <td colspan="4">
+                    <input type="text" name="username" id="username">
+                </td>
+            </tr>
+
+            <tr>
+                <td>密码</td>
+                <td colspan="4">
+                    <input type="password" name="password" id="password">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="5" align="center">
+                    <input type="submit" value="登录" id="login">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</div>
+
+<a href="index.html">回首页</a>
+</body>
+</html>

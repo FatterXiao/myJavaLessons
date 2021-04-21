@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb0417.iml" filepath="$PROJECT_DIR$/JavaWeb0417.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore02/bookstore02.iml" filepath="$PROJECT_DIR$/bookstore02/bookstore02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore03/bookstore03.iml" filepath="$PROJECT_DIR$/bookstore03/bookstore03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework_servlet/homework_servlet.iml" filepath="$PROJECT_DIR$/homework_servlet/homework_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybook/mybook.iml" filepath="$PROJECT_DIR$/mybook/mybook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_jsp/web_jsp.iml" filepath="$PROJECT_DIR$/web_jsp/web_jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_tomcat/web_tomcat.iml" filepath="$PROJECT_DIR$/web_tomcat/web_tomcat.iml" />
+    </modules>
+  </component>
+</project>

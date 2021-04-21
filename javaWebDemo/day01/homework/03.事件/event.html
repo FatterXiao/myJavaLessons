@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>event</title>
+<script type="text/javascript">
+	//借助window.onload事件,在这个页面加载完成后执行程序代码
+	window.onload = function(){
+		//1.声明函数（造地雷）
+		var dL = function () {
+			alert("我爆炸了……")
+		};
+		//2.获取按钮对象（寻找埋地雷的地点）
+		var btnEle = document.getElementById("btnId");
+		//3.将函数绑定到按钮的单击事件上（埋地雷）
+		//赋给按钮单击属性的时函数整体，不是函数的执行结果
+		btnEle.onclick = dL;
+
+		/*
+			函数执行的时机：
+				1、手动调用函数
+				2、将函数绑定给标签的事件属性，触发事件后执行
+			常用的事件：
+				1.单击事件：onclick
+				2.内容改变的事件：onchange
+				3.获取焦点的事件：onfocus
+				4.失去焦点的事件：onblur
+		 */
+		//获取文本框
+		var textInput = document.getElementById("username");
+		//给文本框绑定内容改变的事件
+		textInput.onchange = function () {
+			alert("看我72变！");
+		};
+		//给文本框绑定失去焦点的事件
+		textInput.onblur = function () {
+			alert("我out了……")
+		};
+		//获取密码框
+		var passwordInput = document.getElementById("pwd");
+		//给密码框绑定获取焦点的事件
+		passwordInput.onfocus = function () {
+			alert("我是焦点");
+		};
+
+	};
+</script>
+</head>
+<body>
+	<button id="btnId">SayHello</button><br>
+	<form action="" method="">
+		用户名：<input type="text" name="username" id="username"><br>
+		密码：<input type="password" name="password" id="pwd"><br>
+		<input type="submit">
+	</form>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS基本语法</title>
+<!--2.写在style标签中，通常将style标签放在head标签中：开发阶段使用这种方式-->
+	<style>
+		p{
+			color: red;
+			font-size: 20px
+		}
+	</style>
+<!--3.引入外部的css文件：项目上线后使用这种方式
+	使用该方式的好处：
+		1.省流量
+		2.可以复用
+-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<!--1.写在标签的style属性中：结构跟表现相耦合
+		字体的大小使用像素px表示
+	-->
+<!--	<p style="color: red;font-size: 30px">师傅领进门，修行在个人</p>-->
+	<p>师傅领进门，修行在个人</p>
+	<div>锄禾日当午，汗滴禾下土</div>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bookstore01/bookstore01.iml" filepath="$PROJECT_DIR$/bookstore01/bookstore01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore02/bookstore02.iml" filepath="$PROJECT_DIR$/bookstore02/bookstore02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore03/bookstore03.iml" filepath="$PROJECT_DIR$/bookstore03/bookstore03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/html_css/html_css.iml" filepath="$PROJECT_DIR$/html_css/html_css.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jQuery/jQuery.iml" filepath="$PROJECT_DIR$/jQuery/jQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javascript/javascript.iml" filepath="$PROJECT_DIR$/javascript/javascript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_ex/web_ex.iml" filepath="$PROJECT_DIR$/web_ex/web_ex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_http/web_http.iml" filepath="$PROJECT_DIR$/web_http/web_http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_jsp/web_jsp.iml" filepath="$PROJECT_DIR$/web_jsp/web_jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_servlet/web_servlet.iml" filepath="$PROJECT_DIR$/web_servlet/web_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_servlet_ex/web_servlet_ex.iml" filepath="$PROJECT_DIR$/web_servlet_ex/web_servlet_ex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_tomcat/web_tomcat.iml" filepath="$PROJECT_DIR$/web_tomcat/web_tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml/xml.iml" filepath="$PROJECT_DIR$/xml/xml.iml" />
+    </modules>
+  </component>
+</project>

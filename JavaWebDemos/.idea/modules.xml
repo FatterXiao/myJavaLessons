@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaWebDemos.iml" filepath="$PROJECT_DIR$/JavaWebDemos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/XML/XML.iml" filepath="$PROJECT_DIR$/XML/XML.iml" />
+      <module fileurl="file://$PROJECT_DIR$/book_storeProject/book_storeProject.iml" filepath="$PROJECT_DIR$/book_storeProject/book_storeProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homework/homework.iml" filepath="$PROJECT_DIR$/homework/homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jQuery/jQuery.iml" filepath="$PROJECT_DIR$/jQuery/jQuery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_servlet/web_servlet.iml" filepath="$PROJECT_DIR$/web_servlet/web_servlet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_test/web_test.iml" filepath="$PROJECT_DIR$/web_test/web_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_tomcat/web_tomcat.iml" filepath="$PROJECT_DIR$/web_tomcat/web_tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xml_parse/xml_parse.iml" filepath="$PROJECT_DIR$/xml_parse/xml_parse.iml" />
+    </modules>
+  </component>
+</project>

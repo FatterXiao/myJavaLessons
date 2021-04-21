@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>dom查询</title>
+<link rel="stylesheet" type="text/css" href="style/css.css" />
+<script type="text/javascript">
+	window.onload = function(){
+		//1.查找#bj节点
+		//获取第一个按钮
+		var btnEle01 = document.getElementById("btn01");
+		//给第一个按钮绑定单击事件
+		btnEle01.onclick = function () {
+			//获取id为bj的li元素节点
+			var bjLi = document.getElementById("bj");
+			/*
+				属性innerText和innerHTML的区别：
+					innerText：获取或设置成对出现的标签中的文本值
+					innerHTML：和innerText的功能类似，唯一的区别是该属性可以解析HTML标签
+			 */
+			alert(bjLi.innerText);
+		};
+		//2.查找所有li节点
+		var btnEle02 = document.getElementById("btn02");
+		btnEle02.onclick = function(){
+			//获取所有的li元素节点
+			var liEles = document.getElementsByTagName("li");
+			//遍历
+			for(var i = 0 ; i < liEles.length ; i++){
+				//获取每一个li元素节点
+				var liEle = liEles[i];
+				//弹出每一个li元素节点中的文本值
+				alert(liEle.innerText);
+			}
+		};
+		//3.查找name=gender的所有节点
+		var btnEle03 = document.getElementById("btn03");
+		btnEle03.onclick = function(){
+			//获取name=gender的元素节点
+			var inputEles = document.getElementsByName("gender");
+			//获取单选按钮的value属性值
+			alert(inputEles[0].value);
+			alert(inputEles[1].value);
+		};
+		//4.查找#city下所有li节点
+		var btnEle04 = document.getElementById("btn04");
+		btnEle04.onclick = function(){
+			//1.获取id为city的ul元素节点
+			var ulEle = document.getElementById("city");
+			//2.获取ul元素节点中的所有的li元素节点
+			var liEles = ulEle.getElementsByTagName("li");
+			//3.遍历得到city下的每一个li元素节点
+			for(var i = 0 ; i < liEles.length ; i++){
+				alert(liEles[i].innerText);
+			}
+		};
+		//5.返回#city的所有子节点
+		var btnEle05 = document.getElementById("btn05");
+		btnEle05.onclick = function(){
+			//1.获取id为city的ul元素节点
+			var ulEle = document.getElementById("city");
+			//2.获取id为city的元素下所有的子节点
+			var chNodes = ulEle.childNodes;
+			//IE8之前（包括IE8）返回值是4；IE8之后返回值是9（考虑了空白的文本节点）
+			alert(chNodes.length);
+		};
+		//6.返回#phone的第一个子节点
+		var btnEle06 = document.getElementById("btn06");
+		btnEle06.onclick = function(){
+			//获取id为phone的元素节点
+			var ulEle = document.getElementById("phone");
+			//获取id为phone的第一个元素节点
+			var iosLi = ulEle.firstChild;
+			alert(iosLi.innerText);
+		};
+		//7.返回#bj的父节点
+		var btnEle07 = document.getElementById("btn07");
+		btnEle07.onclick = function(){
+			//获取id为bj的元素节点
+			var bjEle = document.getElementById("bj");
+			//获取bjEle的父节点
+			var ulEle = bjEle.parentNode;
+			alert(ulEle.innerHTML);
+		};
+		//8.返回#android的前一个兄弟节点
+		var btnEle08 = document.getElementById("btn08");
+		btnEle08.onclick = function(){
+			//获取id为android的元素节点
+			var androidLiEle = document.getElementById("android");
+			//获取前一个兄弟节点
+			var preSibling = androidLiEle.previousSibling;
+			alert(preSibling.innerText);
+		};
+
+		/*
+		* 	通过JavaScript获取或设置元素的属性值
+		* 		获取属性值：对象.属性名
+		* 		设置属性值：对象.属性名 = 新值
+		*
+		* */
+		//9.读取#username的value属性值
+		var btnEle09 = document.getElementById("btn09");
+		btnEle09.onclick = function(){
+			//获取id为username的文本框
+			var inputEle = document.getElementById("username");
+			//获取文本框中的value属性值
+			//注意：文本框中输入的内容就是value属性值
+			alert(inputEle.value);
+		};
+		//10.设置#username的value属性值
+		var btnEle10 = document.getElementById("btn10");
+		btnEle10.onclick = function(){
+			//获取id为username的文本框
+			var inputEle = document.getElementById("username");
+			//设置文本框的value属性值
+			inputEle.value = "admin";
+		};
+		//11.返回#bj的文本值
+		var btnEle11 = document.getElementById("btn11");
+		btnEle11.onclick = function(){
+			//1.获取id为bj的li元素节点
+			var bjEle = document.getElementById("bj");
+			//2.获取id为bj的元素节点的第一个子节点
+			var textNode = bjEle.firstChild;
+			//3.获取文本节点的节点值
+			var text = textNode.nodeValue;
+			alert(text);
+			alert(bjEle.innerText);
+		};
+		//12.给#city添加一个li元素节点（<li>武汉</li>）
+		var btnEle12 = document.getElementById("btn12");
+		btnEle12.onclick = function(){
+			//1.创建武汉文本节点
+			var textNode = document.createTextNode("武汉");
+			//2.创建一个li元素节点
+			var liEle = document.createElement("li");
+			//3.将武汉文本节点添加到li元素节点中
+			liEle.appendChild(textNode);
+			//4.获取id为city的元素节点
+			var cityEle = document.getElementById("city");
+			//5.将li元素节点添加到id为city元素节点中
+			cityEle.appendChild(liEle);
+		};
+	};
+</script>
+</head>
+<body>
+<div id="total">
+	<div class="inner">
+		<p>
+			你喜欢哪个城市?
+		</p>
+
+		<ul id="city">
+			<li id="bj">北京</li>
+			<li>上海</li>
+			<li>东京</li>
+			<li>首尔</li>
+		</ul>
+
+		<br>
+		<br>
+
+		<p>
+			你喜欢哪款单机游戏?
+		</p>
+
+		<ul id="game">
+			<li id="rl">红警</li>
+			<li>实况</li>
+			<li>极品飞车</li>
+			<li>魔兽</li>
+		</ul>
+
+		<br />
+		<br />
+
+		<p>
+			你手机的操作系统是?
+		</p>
+
+		<ul id="phone"><li>IOS</li><li id="android">Android</li><li>Windows Phone</li></ul>
+	</div>
+
+	<div class="inner">
+		gender:
+		<input type="radio" name="gender" value="male"/>
+		Male
+		<input type="radio" name="gender" value="female"/>
+		Female
+		<br>
+		<br>
+		name:
+		<input type="text" name="name" id="username" value="abcde"/>
+	</div>
+</div>
+<div id="btnList">
+	<div><button id="btn01">查找#bj节点</button></div>
+	<div><button id="btn02">查找所有li节点</button></div>
+	<div><button id="btn03">查找name=gender的所有节点</button></div>
+	<div><button id="btn04">查找#city下所有li节点</button></div>
+	<div><button id="btn05">返回#city的所有子节点</button></div>
+	<div><button id="btn06">返回#phone的第一个子节点</button></div>
+	<div><button id="btn07">返回#bj的父节点</button></div>
+	<div><button id="btn08">返回#android的前一个兄弟节点</button></div>
+	<div><button id="btn09">返回#username的value属性值</button></div>
+	<div><button id="btn10">设置#username的value属性值</button></div>
+	<div><button id="btn11">返回#bj的文本值</button></div>
+	<div><button id="btn12">给#city添加一个li元素节点</button></div>
+</div>
+</body>
+</html>

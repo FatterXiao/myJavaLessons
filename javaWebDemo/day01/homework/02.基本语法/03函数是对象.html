@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>函数也是对象</title>
+<script type="text/javascript">
+	//在JavaScript中，函数也作为一种数据类型存在，而且是引用数据类型，函数名就是指向其内存空间地址的引用
+	//在JavaScript中函数也是对象
+	function fun() {
+        //在JavaScript中函数也是对象，我们可以给函数设置属性
+    }
+    //给函数设置age属性
+    fun.age = 18;
+	fun.gender = "男";
+	//获取函数的age和genderr属性值
+    // alert(fun.age);
+    // alert(fun.gender);
+
+    //在JS中创建对象
+    //方式一：直接new
+    var obj = new Object();
+    //给对象设置属性
+    obj.name="张三";
+    obj.age=23;
+    obj.address = "武汉";
+    alert(obj.name+"-"+obj.age+"-"+obj.address);
+
+    //方式二：JSON对象
+    var jsonObj = {name:"李四",age:24,address:"北京"};
+    alert(jsonObj.name+"-"+jsonObj.age+"-"+jsonObj.address);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

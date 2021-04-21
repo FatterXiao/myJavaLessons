@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>load04</title>
+<!--4.借助于window.onload完美解决问题-->
+<script type="text/javascript">
+	//当文档加载完成之后再执行函数中的内容
+	window.onload = function () {
+		//获取按钮对象
+		var btnEle = document.getElementById("btnId");
+		// alert(btnEle);
+		//给按钮对象绑定单击事件
+		btnEle.onclick = function(){
+			//弹出提示框
+			alert("Hello JS");
+		};
+	};
+</script>
+</head>
+<body>
+	<button id="btnId">SayHello</button>
+</body>
+</html>

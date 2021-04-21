@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table_blank</title>
+</head>
+<body>
+    <!--通过table标签创建一个表格
+        border属性：设置边框
+        cellpadding属性：设置单元格的大小
+        cellspacing属性：设置单元格之间的间隙
+    -->
+    <table border="1px" cellpadding="8" cellspacing="0">
+        <!--表格中的行使用tr标签表示-->
+        <tr>
+            <!--表格中的表头使用th标签表示-->
+            <th>姓名</th>
+            <th>阵营</th>
+            <th>职业</th>
+            <th>武器</th>
+        </tr>
+        <!--表格中的行使用tr标签表示-->
+        <tr>
+            <!--每行的列使用td标签表示-->
+            <td>刘备</td>
+            <!--跨行合并单元格使用rowspan属性进行设置-->
+            <td rowspan="5">蜀</td>
+            <td>战士</td>
+            <td>雌雄双股剑</td>
+        </tr><!--表格中的行使用tr标签表示-->
+        <tr>
+            <!--每行的列使用td标签表示-->
+            <td>诸葛亮</td>
+<!--            <td>蜀</td>-->
+            <!--跨列合并单元格使用colspan属性进行设置-->
+            <td colspan="2" align="center">法师</td>
+            <!--<td>羽扇</td>-->
+        </tr><!--表格中的行使用tr标签表示-->
+        <tr>
+            <!--每行的列使用td标签表示-->
+            <td>关羽</td>
+<!--            <td>蜀</td>-->
+            <td>战士</td>
+            <td>青龙偃月刀</td>
+        </tr><!--表格中的行使用tr标签表示-->
+        <tr>
+            <!--每行的列使用td标签表示-->
+            <td>张飞</td>
+<!--            <td>蜀</td>-->
+            <td>坦克</td>
+            <td>丈八蛇矛</td>
+        </tr>
+        <tr>
+            <!--每行的列使用td标签表示-->
+            <td>赵云</td>
+<!--            <td>蜀</td>-->
+            <td>刺客</td>
+            <td>亮银枪</td>
+        </tr>
+    </table>
+   
+</body>
+</html>

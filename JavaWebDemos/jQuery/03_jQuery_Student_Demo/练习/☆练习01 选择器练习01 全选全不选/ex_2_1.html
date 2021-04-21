@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="UTF-8">
+	<title>全选全不选1(空白)</title>
+	<script type="text/javascript" src="../../script/jquery-1.7.2.js"></script>
+	<script type="text/javascript">
+		/* 
+		功能需求：
+			①全选按钮：点击后所有爱好都选中
+			②全不选按钮：点击后所有爱好都不选中
+			③反选按钮：点击后所有爱好选中状态反转
+			④提交按钮：点击后依次弹出选中内容
+		*/
+		$(function(){
+			//给全选按钮绑定单击事件
+			$("#checkedAllBtn").click(function () {
+				//①全选按钮：点击后所有爱好都选中
+				//让所有的复选框都选中即设置它们的checked属性值为true
+				/*
+					attr()：获取或设置标签的属性值
+					jQuery对象.attr("属性名")：获取属性值
+					jQuery对象.attr("属性名","新值")：设置属性值
+					jQuery对象.attr({"属性名1":"值1","属性名2:"值2"})：设置多个属性值
+				 */
+				$(":checkbox").attr("checked",true);
+			});
+			//给全不选按钮绑定单击事件
+			$("#checkedNoBtn").click(function () {
+				//②全不选按钮：点击后所有爱好都不选中
+				$(":checkbox").attr("checked",false);
+			});
+			//给反选按钮绑定单击事件
+			$("#checkedRevBtn").click(function () {
+				//③反选按钮：点击后所有爱好选中状态反转
+				//需要知道每一个复选框的选中状态
+				$(":checkbox").each(function () {
+					// if(this.checked){
+					// 	//证明当前的复选框是选中的状态
+					// 	this.checked = false;
+					// }else{
+					// 	//证明当前的复选框是未选中的状态
+					// 	this.checked = true;
+					// }
+					//将原来的状态取反
+					this.checked = !this.checked;
+				});
+			});
+			//给提交按钮绑定单击事件
+			$("#sendBtn").click(function () {
+				//④提交按钮：点击后依次弹出选中内容
+				$(":checked").each(function () {
+					alert(this.value);
+				});
+			});
+		});
+		
+	</script>
+	</head>
+	<body>
+	
+		<form method="post" action="">
+		
+			你爱好的运动是：
+			<br />
+			<input type="checkbox" name="items" value="足球"/>足球
+			<input type="checkbox" name="items" value="篮球" />篮球
+			<input type="checkbox" name="items" value="羽毛球" />羽毛球
+			<input type="checkbox" name="items" value="乒乓球" />乒乓球
+			<br />
+			<input type="button" id="checkedAllBtn" value="全　选" />
+			<input type="button" id="checkedNoBtn" value="全不选" />
+			<input type="button" id="checkedRevBtn" value="反　选" />
+			<input type="button" id="sendBtn" value="提　交" />
+		</form>
+	
+	</body>
+</html>

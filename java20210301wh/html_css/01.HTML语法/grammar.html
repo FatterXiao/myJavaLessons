@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>grammar</title>
+</head>
+<body>
+
+	<!-- 1.标签的分类
+		1）成对出现的标签。如：<html></html> <body></body>
+		2）自结束标签。如：<meta /> <br/> <input />
+	-->
+	
+	<!-- 2.标签不区分大小写，但是建议小写-->
+	<p>我是一个段落</P>
+	<!-- 3.标签可以嵌套但不能交叉嵌套 -->
+	<div><span>标签可以嵌套</span></div>
+	<div><span>但是标签不可以交叉嵌套</div></span>
+	<!-- 4.标签必须正确关闭
+		对于成对出现的标签，有开始标签，必须写结束标签；对于自结束标签来说，HTML5规范中可以省略结束符
+	-->
+	<p>我又是一个段落</p>
+	<br><br/>
+	<!-- 5.属性必须有值，且属性值必须加引号 -->
+	<font color="red">我要红</font><br>
+	<font color=red>我要红</font><br>
+	<font color="">我要红</font><br>
+	<!-- 6.注释不能嵌套 -->
+	<!--
+		注释的快捷键：Ctrl+Shift+/
+	-->
+	<!--我是注释内容，在浏览器中看不到-->
+	<!--<!-- 我是嵌套的注释 -->-->
+
+</body>
+</html>

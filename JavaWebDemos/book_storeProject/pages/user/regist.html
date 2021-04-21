@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>尚硅谷会员注册页面</title>
+    <link type="text/css" rel="stylesheet" href="../../static/css/style.css"/>
+    <link rel="stylesheet" href="../../static/css/register.css"/>
+    <style type="text/css">
+        .login_form {
+            height: 420px;
+            margin-top: 25px;
+        }
+    </style>
+    <script src="../../static/script/jquery-1.7.2.js"></script>
+    <script>
+        $(function () {
+            // 表单提交按钮
+            $("#sub_btn").click(function () {
+                // 1. 注册时用户名的要求
+                // 需要符合用户名的正则表达式的要求
+                var usernameReg = /^[a-zA-Z0-9_-]{3,16}$/;
+                if (!usernameReg.test($("#username").val())) {
+                    alert("用户名必须输入'a-z','A-Z','0-9','_','-'中3到16位字符")
+                    return false;
+                }
+                // 2. 密码输入需要符合要求
+                var passwordReg = /^[a-zA-Z0-9_-]{6,18}$/;
+                var password = $("#password");
+                if(password.val() == ""){
+                  alert("密码不能为空")
+                  return false;
+                }
+                if (!passwordReg.test(password.val())) {
+                    alert("密码必须输入'a-z','A-Z','0-9','_','-'中6到18位字符")
+                    return false;
+                }
+
+                // 3. 确认两次密码输入的是否一致
+                var confirmPassword = $("#confirmPassword");
+                if (confirmPassword.val() != password.val()) {
+                    alert("两次输入的密码不一致，请重新输入")
+                    confirmPassword.val("")
+                    return false;
+                }
+
+                // 4. 用户邮箱
+                var emailReg = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+                if (!emailReg.test($("#email").val())) {
+                    alert("请填写正确格式的邮箱")
+                    return false;
+                }
+
+                // 5. 验证码
+                if($("#code").val() == ""){
+                  alert("验证码不能为空")
+                  return false;
+                }
+            });
+
+
+        });
+
+    </script>
+</head>
+<body>
+<div id="login_header">
+    <a href="../../index.html">
+        <img class="logo_img" alt="" src="../../static/img/logo.gif"/>
+    </a>
+</div>
+
+<div class="login_banner">
+    <div class="register_form">
+        <h1>注册尚硅谷会员</h1>
+        <form action="regist_success.html">
+            <div class="form-item">
+                <div>
+                    <label>用户名称:</label>
+                    <input type="text" placeholder="请输入用户名" id="username"/>
+                </div>
+                <span class="errMess">用户名应为6~16位数组和字母组成</span>
+            </div>
+            <div class="form-item">
+                <div>
+                    <label>用户密码:</label>
+                    <input type="password" placeholder="请输入密码" id="password"/>
+                </div>
+                <span class="errMess">密码的长度至少为8位</span>
+            </div>
+            <div class="form-item">
+                <div>
+                    <label>确认密码:</label>
+                    <input type="password" placeholder="请输入确认密码" id="confirmPassword"/>
+                </div>
+                <span class="errMess">密码两次输入不一致</span>
+            </div>
+            <div class="form-item">
+                <div>
+                    <label>用户邮箱:</label>
+                    <input type="text" placeholder="请输入邮箱" id="email"/>
+                </div>
+                <span class="errMess">请输入正确的邮箱格式</span>
+            </div>
+            <div class="form-item">
+                <div>
+                    <label>验证码:</label>
+                    <div class="verify">
+                        <input type="text" placeholder="" id="code"/>
+                        <img src="../../static/img/code.bmp" alt=""/>
+                    </div>
+                </div>
+                <span class="errMess">请输入正确的验证码</span>
+            </div>
+            <button class="btn" id="sub_btn">注册</button>
+        </form>
+    </div>
+</div>
+<div id="bottom">
+      <span>
+        尚硅谷书城.Copyright &copy;2015
+      </span>
+</div>
+</body>
+</html>
