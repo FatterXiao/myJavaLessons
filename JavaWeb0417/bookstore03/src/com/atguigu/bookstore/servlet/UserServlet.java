@@ -10,6 +10,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
 
 /**
  * @author Mr.Helianthus
@@ -27,11 +29,29 @@ public class UserServlet extends HttpServlet {
             regist(request, response);
             return;
         }
+
+        try {
+            // 优化代码：
+            // 1. 获取方法名字
+            // 2. 调用方法
+            Method declaredMethod = this.getClass().getDeclaredMethod(method, HttpServletRequest.class, HttpServletResponse.class);
+            // - 2.2 设置权限
+            declaredMethod.setAccessible(true);
+            // - 2.3 调用方法
+            declaredMethod.invoke(this,request,response);
+        } catch (NoSuchMethodException e) {
+            e.printStackTrace();
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request,response);
     }
+
 
     protected void login(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         // 1. 获取参数: 用户名 和 密码

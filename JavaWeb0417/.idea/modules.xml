@@ -5,9 +5,16 @@
       <module fileurl="file://$PROJECT_DIR$/JavaWeb0417.iml" filepath="$PROJECT_DIR$/JavaWeb0417.iml" />
       <module fileurl="file://$PROJECT_DIR$/bookstore02/bookstore02.iml" filepath="$PROJECT_DIR$/bookstore02/bookstore02.iml" />
       <module fileurl="file://$PROJECT_DIR$/bookstore03/bookstore03.iml" filepath="$PROJECT_DIR$/bookstore03/bookstore03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore04/bookstore04.iml" filepath="$PROJECT_DIR$/bookstore04/bookstore04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore05/bookstore05.iml" filepath="$PROJECT_DIR$/bookstore05/bookstore05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bookstore06/bookstore06.iml" filepath="$PROJECT_DIR$/bookstore06/bookstore06.iml" />
       <module fileurl="file://$PROJECT_DIR$/homework_servlet/homework_servlet.iml" filepath="$PROJECT_DIR$/homework_servlet/homework_servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybook/mybook.iml" filepath="$PROJECT_DIR$/mybook/mybook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_cookie/web_cookie.iml" filepath="$PROJECT_DIR$/web_cookie/web_cookie.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_el/web_el.iml" filepath="$PROJECT_DIR$/web_el/web_el.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_filter/web_filter.iml" filepath="$PROJECT_DIR$/web_filter/web_filter.iml" />
       <module fileurl="file://$PROJECT_DIR$/web_jsp/web_jsp.iml" filepath="$PROJECT_DIR$/web_jsp/web_jsp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web_jstl/web_jstl.iml" filepath="$PROJECT_DIR$/web_jstl/web_jstl.iml" />
       <module fileurl="file://$PROJECT_DIR$/web_tomcat/web_tomcat.iml" filepath="$PROJECT_DIR$/web_tomcat/web_tomcat.iml" />
     </modules>
   </component>

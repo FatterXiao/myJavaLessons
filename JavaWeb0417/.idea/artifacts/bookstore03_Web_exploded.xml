@@ -8,7 +8,7 @@
           <element id="module-output" name="bookstore03" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="bookLibs" />
         </element>
       </element>
     </root>

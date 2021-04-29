@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -35,7 +36,6 @@
         <img class="logo_img" alt="" src="static/img/logo.gif" />
       </a>
     </div>
-
     <div class="login_banner">
       <div id="l_content">
         <span class="login_word">欢迎登录</span>
@@ -49,10 +49,11 @@
             </div>
             <div class="msg_cont">
               <b></b>
-              <span class="errorMsg"><%=request.getAttribute("msg")==null?"请输入用户名和密码":request.getAttribute("msg")%></span>
+<%--              <span class="errorMsg"><%=request.getAttribute("msg")==null?"请输入用户名和密码":request.getAttribute("msg")%></span>--%>
+              <span class="errorMsg">${empty msg?"请输入用户名和密码":msg}</span>
             </div>
             <div class="form">
-              <form action="UserServlet?method=login" method="post">
+              <form action="UserServlet?methodName=login" method="post">
 <%--                <input type="hidden" name="way" value="login">--%>
                 <label>用户名称：</label>
                 <input

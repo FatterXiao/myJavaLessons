@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -85,14 +86,14 @@
     <div class="login_banner">
       <div class="register_form">
         <h1>注册尚硅谷会员</h1>
-        <form action="UserServlet?method=regist" method="post">
+        <form action="UserServlet?methodName=regist" method="post">
 <%--          <input type="hidden" name="way" value="regist">--%>
           <div class="form-item">
             <div>
               <label>用户名称:</label>
-              <input type="text" placeholder="请输入用户名" id="username" autocomplete="on" name="username"/>
+              <input value="${param.username}" type="text" placeholder="请输入用户名" id="username" autocomplete="on" name="username"/>
             </div>
-            <span class="errMess" id="userMsg"><%=request.getAttribute("msg")==null?"":request.getAttribute("msg")%></span>
+            <span class="errMess" id="userMsg">${msg}</span>
           </div>
           <div class="form-item">
             <div>
@@ -111,7 +112,7 @@
           <div class="form-item">
             <div>
               <label>用户邮箱:</label>
-              <input type="text" placeholder="请输入邮箱" id="email" name="email"/>
+              <input value="${param.email}" type="text" placeholder="请输入邮箱" id="email" name="email"/>
             </div>
             <span class="errMess" id="emailMsg"></span>
           </div>

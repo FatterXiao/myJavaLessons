@@ -28,7 +28,8 @@
             <div class="msg_cont">
               <b></b>
 <%--              <span class="errorMsg">请输入用户名和密码</span>--%>
-              <span class="errorMsg"><%=request.getAttribute("loginError") == null ?"请输入用户名和密码":request.getAttribute("loginError")%></span>
+<%--              <span class="errorMsg"><%=request.getAttribute("loginError") == null ?"请输入用户名和密码":request.getAttribute("loginError")%></span>--%>
+              <span class="errorMsg">${empty loginError?"请输入用户名和密码":loginError}</span>
             </div>
             <div class="form">
               <form action="LoginServlet" method="post">
@@ -41,6 +42,7 @@
                   tabindex="1"
                   name="username"
                   id="username"
+                  value="${param.username}"
                 />
                 <br />
                 <br />
@@ -53,7 +55,7 @@
                   tabindex="1"
                   name="password"
                   id="password"
-                />
+
                 <br />
                 <br />
                 <input type="submit" value="登录" id="sub_btn" />

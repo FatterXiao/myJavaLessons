@@ -1,0 +1,67 @@
+一、登录注册实现的步骤：
+1.创建bookstore数据库，然后在数据库中创建users表，并创建User类
+2.获取连接
+    -1）导入druid的jar包和MySQL的驱动包以及junit的jar包
+    -2）将资料中的JDBCUtils.java文件复制到项目中
+    -3）创建druid.properties属性文件，文件中以key=value的形式配置了连接数据库的相关信息
+    -4）通过Junit测试JDBCUtils中获取连接的方法
+3.创建UserDao接口
+    -该接口中有三个方法
+    -1）验证用户名和密码是否正确的方法
+    -2）验证用户名是否存在的方法
+    -3）保存用户信息的方法
+4.创建UserDaoImpl，即UserDao接口的实现类
+    -1）将资料中的BaseDao.java文件复制到项目中
+        -此时还需要导入dbutils的jar包
+    -2）让UserDaoImpl继承BaseDao<User>并实现UserDao接口
+    -3）UserDaoImpl方法的实现：
+        -①写sql语句
+        -②调用BaseDao中的方法实现功能
+5.创建UserService接口
+    -1）创建登录的方法
+    -2）创建注册的方法
+    -3）创建保存用户的方法
+6.创建UserServiceImpl，即UserService接口的实现类
+    -1）创建UserDao对象
+    -2）通过调用UserDao中的方法来实现UserService中的三个方法
+7.创建LoginServlet实现登录功能
+    -1）获取表单中提交的用户名和密码
+    -2）将用户名和密码封装成User对象、
+    -3）创建UserService对象
+    -4）调用UserService中登录的方法，得到一个User对象
+    -5）判断返回的User对象是否为null
+        -如果为null，证明用户名和密码不正确，转发到登录页面
+        -如果不为null，证明用户名和密码正确，重定向到登录成功页面
+8.创建RegistServlet实现注册功能
+    -1）获取表单中提交的用户名、密码、邮箱
+    -2）将用户名、密码、邮箱封装成User对象
+    -3）创建UserService对象
+    -4）调用UserService中注册的方法，得到一个布尔类型的值
+        -如果返回值是true，证明用户名以存在，注册失败，转发到注册页面
+        -如果返回值是false，证明用户名可用，此时有两个操作：
+            -①调用UserService中保存用户的方法将用户信息保存到数据库中
+            -②重定向到注册成功页面
+9.调用的过程：
+    表单→Servlet→Service→Dao→数据库
+       -表单提交到Servlet，Servlet调用Service，Service调用Dao，Dao操作数据库
+
+二、获取所有图书的步骤
+1.创建BookDao接口
+    -创建一个获取所有图书的方法
+2.创建BookDaoImpl实现类
+    -1）继承BaseDao<Book>，实现BookDao接口
+    -2）实现获取所有图书的方法
+        -①写sql语句
+        -②调用BaseDao中获取一个List的方法
+3.创建BookService接口
+    -创建一个获取所有图书的方法
+4.创建BookServiceImpl实现类
+    -1）创建BookDao对象
+    -2）调用BookDao中获取所有图书的方法实现BookService中获取所有图书的方法
+5.创建BookManagerServlet，继承BaseServlet
+    -1）在当前Servlet中创建获取所有图书的方法
+    -2）在当前Servlet中创建BookService对象
+    -3）在获取所有图书的方法中调用BookService中获取所有图书的方法，得到一个List
+    -4）将List放到request域中
+    -5）转发到显示所有图书的页面pages/manager/book_manager.jsp
+6.在book_manager.jsp页面中通过forEach标签遍历BookManagerServlet中向request域中放的List

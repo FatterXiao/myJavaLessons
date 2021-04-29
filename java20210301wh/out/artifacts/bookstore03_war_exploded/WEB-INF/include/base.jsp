@@ -1,1 +1,1 @@
-<base href="<%=request.getContextPath()%>/">
+<base href="${pageContext.request.contextPath}/">

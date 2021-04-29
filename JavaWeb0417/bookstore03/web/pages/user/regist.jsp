@@ -59,14 +59,14 @@
             <div class="form-item">
                 <div>
                     <label>用户名称:</label>
-                    <input type="text" placeholder="请输入用户名" name="username" id="username"/>
+                    <input type="text" placeholder="请输入用户名" name="username" id="username" value="${param.username}"/>
                 </div>
                 <span  class="errMess" id="usernameMsg"><%=request.getAttribute("registErrorMsg")==null?"":request.getAttribute("registErrorMsg")%></span>
             </div>
             <div class="form-item">
                 <div>
                     <label>用户密码:</label>
-                    <input type="password" placeholder="请输入密码" name="password" id="password"/>
+                    <input type="password" placeholder="请输入密码" name="password" id="password" />
                 </div>
                 <span class="errMess" id="passwordMsg">密码的长度至少为8位</span>
             </div>
@@ -80,7 +80,7 @@
             <div class="form-item">
                 <div>
                     <label>用户邮箱:</label>
-                    <input type="text" placeholder="请输入邮箱" name="email"/>
+                    <input type="text" placeholder="请输入邮箱" name="email" value="${param.email}"/>
                 </div>
                 <span class="errMess" id="email">请输入正确的邮箱格式</span>
             </div>
